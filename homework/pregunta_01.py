@@ -14,3 +14,7 @@ def pregunta_01():
     40
 
     """
+    import pandas as pd
+    tbl0 = pd.read_csv('files/input/tbl0.tsv', sep='\t', header=0)
+    return tbl0.shape[0]
+print(pregunta_01())
